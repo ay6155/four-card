@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root {
+
+/* ### Primary */
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* ### Neutral */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: "poppins";
+    line-height: 1.5;
+    min-height: 100vh;
+    /* background-color: var(--Very-Light-Gray); */
+}
+
+/* typography */
+
+    .power-tech h1{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--Grayish-Blue);
+    }
+
+    .power-tech h2{
+        font-size: 1.6rem;
+        font-weight: 600;
+        color:var(--Very-Dark-Blue);
+    }
+
+    .power-tech .power-info {
+        color:var(--Grayish-Blue);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .company-category h3{
+        color:var(--Very-Dark-Blue);
+        font-size: 1..5;
+    }
+
+    .company-category .company-content {
+        color: var(--Grayish-Blue);
+        font-size: 1rem;
+    }
+
+    /* styling-content  */
+
+    .container{
+     
+        
+    }
+
+    header{
+        margin: 0 auto;
+        padding: 3.5em 2em;
+    }
+
+    .power-tech {
+        text-align: center;
+    }
+
+    .power-tech h1 {
+        margin-bottom:0;
+        word-spacing:3px;
+    }
+
+    .power-tech h2{
+        margin-top: 0;
+    }
+
+
+    /* layout  */
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2em 3.5em 2em;
+    }
+
+    .company-category {
+        background-color: var(--Very-Light-Gray);
+        flex: 1;
+    }
+
+    .company-supervisor::before{
+        border-top: 2px solid var(--Blue);
+    }
+
+
+
