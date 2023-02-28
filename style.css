@@ -39,12 +39,14 @@ body{
         font-size: 1.5rem;
         font-weight: 400;
         color: var(--Grayish-Blue);
+       padding:1em 0;
     }
 
-    .power-tech h2{
+    .power-tech{
         font-size: 1.6rem;
         font-weight: 600;
         color:var(--Very-Dark-Blue);
+        display: block;
     }
 
     .power-tech .power-info {
@@ -53,11 +55,12 @@ body{
         font-weight: 400;
         max-width: 420px;
         margin:0 auto;
+        display: block;
     }
 
     .company-category h3{
         color:var(--Very-Dark-Blue);
-        font-size: 1..5;
+        font-size: 1.5;
     }
 
     .company-category .company-content {
@@ -108,24 +111,28 @@ body{
         background-color: var(--Very-Light-Gray);
         flex: 1;
         position: relative;
-        border-radius: 0.5em;
+        border-radius: 0.2em;
         overflow: hidden;
-        padding: 1.3em 1em;
-        /* box-shadow: 0 1px 1px   var(--Very-Dark-Blue); */
+        
+
+        /* box-shadow: 0 1px 1px 0 var(--Very-Dark-Blue); */
     }
 
     .company-supervisor {
-        
+        padding: 1.3em 1.3em;
     }
 
     .team-icon {
         margin-top: 1em;
+        margin-right:1em;
         padding-left: 2em;
-        float: right;
+        display: flex;
+        justify-content: end;
     }
 
     .logo{
-       min-width: 70%;
+    
+       width:60px
     }
 
     .one-bd::before{
@@ -170,15 +177,43 @@ body{
         header{
             margin-bottom: 2em;
         }
+
         .power-tech .power-info {
             max-width: 420px;
             margin:0 auto;
         }
+
         .flex-container {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 60rem;
+            place-items: center;
+            justify-content: center;
+            grid-template-areas:
+            "supervisor team-builder calculator"
+            "supervisor karma calculator";
+             margin:0 auto;
+             gap:2em;
         }
+
+        .first-column{
+            grid-area: supervisor;
+            
+        }
+
+        .second-column{
+            grid-area: team-builder;
+        }
+
+        .third-column{
+            grid-area: karma;
+        }
+
+        .fourth-column{
+            grid-area: calculator;
+            
+        }
+        
     }
 
 
